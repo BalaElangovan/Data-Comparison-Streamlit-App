@@ -12,10 +12,28 @@ The app displays a side-by-side or stacked visual comparison of matched rows, wi
 - Randomly samples 4 records for data comparison
 - Highlights text differences between old and new files
 - Export result as Excel (optional)
-- Resample button for new comparisons
 
 ## How to Run
 
 ```bash
 pip install -r requirements.txt
 streamlit run compare_app.py
+```
+
+## Why Streamlit?
+
+This project uses Streamlit as the primary framework to build an interactive and user-friendly web interface for comparing Excel or CSV files. Streamlit simplifies the development of data-driven web applications using pure Python—no HTML, CSS, or JavaScript required.
+
+
+📁 File Upload Widgets:	Let users upload two Excel or CSV files directly through the browser.
+
+🎛️ Interactive Controls:	Enables column selection, key field identification, and resampling with the click of a button.
+
+📊 Data Visualisation: 	Displays Excel/CSV content and comparison results using st.dataframe and styled tables.
+
+🎯 Change Detection:	Highlights modified cell values in real-time, improving visibility for QA and data review tasks.
+
+☁️ Easy Deployment: Allows effortless deployment to Streamlit Cloud, enabling others to use the app without installation.
+
+
+By using Streamlit, we were able to rapidly prototype and deploy a comparison tool that is both powerful and accessible, even to non-technical users.
